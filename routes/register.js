@@ -3,13 +3,13 @@ const app = express();
 
 app.get('/registerUser', function(req, res, next) {
   req.getConnection(function(error, conn) {
-    const {first, last, email, pass } = req.query;
-    sqlQuery_userInfo = `INSERT INTO userinfo (FirstName, LastName, Email, PasswordHash) VALUES ('${first}', '${last}', '${email}', '${pass}')`;
+    const {first, last, email, pass, phone} = req.query;
+    sqlQuery_userInfo = `INSERT INTO userinfo (FirstName, LastName, Email, PasswordHash, PhoneNumber) VALUES ('${first}', '${last}', '${email}', '${pass}', '${phone}')`;
 
     conn.query(sqlQuery_userInfo, function(err, result) {
       if(err) {
         // Distplay error message in case of error
-        req.flash('error', err)
+        res.send(err)
       }
 
       else {

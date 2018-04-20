@@ -15,7 +15,8 @@ class Register extends Component {
         first_name:'',
         last_name:'',
         email:'',
-        password:''
+        password:'',
+        phone: ''
       }
     }
   }
@@ -29,7 +30,7 @@ class Register extends Component {
 
   registerUser () {
     const { newUser } = this.state;
-    fetch(`/registerUser?first=${newUser.first_name}&last=${newUser.last_name}&email=${newUser.email}&pass=${newUser.password}`)
+    fetch(`/registerUser?first=${newUser.first_name}&last=${newUser.last_name}&email=${newUser.email}&pass=${newUser.password}&phone=${newUser.phone}`)
       .then(this.listUsers)
       .catch(err => console.log(err))
   }
@@ -71,6 +72,13 @@ class Register extends Component {
              hintText="Enter your Password"
              floatingLabelText="Password"
              onChange = {(event,newValue) => this.setState( newUser: {...newUser, password: newValue})}
+             />
+           <br/>
+           <TextField
+             className ="field5"
+             hintText="Enter your Phone Number"
+             floatingLabelText="Phone Number"
+             onChange = {(event,newValue) => this.setState( newUser: {...newUser, phone: newValue})}
              />
            <br/>
            <RaisedButton className="submit" label="Submit" primary={true} style={style} onClick={(event) => this.registerUser(event)}/>
