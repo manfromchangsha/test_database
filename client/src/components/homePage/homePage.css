@@ -1,15 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
 .leaflet-container {
   width:100%;
   height:650px;

@@ -26,12 +26,15 @@ var session = require('express-session');
 app.use(flash())
 
 app.get('/', (req, res) => {
-  res.send('go to /products to see products')
+  res.send('go to /registerUser to see a list of all users')
+  res.send('go to /registerUser to see recently added users')
 });
 
 var test = require('./routes/test')
+var register = require('./routes/register')
 
 app.use('/', test)
+app.use('/', register)
 
 const port = 5000;
 
