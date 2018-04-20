@@ -1,43 +1,33 @@
-# React Express Starter Pack
+# Express-ReactJS Database Setup
 
-> Create full stack apps with React and Express. Run your client and server with a single command. 
+### Author: Sam Bennetts
 
-### Redux Version
-This version does not include Redux
-[Click Here For Redux Version](https://github.com/bradtraversy/react_redux_express_starter) 
-
-## Quick Start
+## Installation Instructions
 
 ``` bash
-# Install dependencies for server
+
+# Install the dependencies for the MySQL server
 npm install
 
-# Install dependencies for client
-npm run client-install
+# Install dependencies for the client (aka the myCUpool app)
+npm run client-Install
 
-# Run the client & server with concurrently
-npm run dev
-
-# Run the Express server only
-npm run server
-
-# Run the React client only
-npm run client
-
-# Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
 
-## App Info
+## Running the application
 
-### Author
+``` bash
+# To run just the server, run the following command from the home directory & navigate to localhost:5000
+npm run server
 
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
+# To run just the application, run the following command from the /client folder
+npm start
 
-### Version
+# Run the client and SQL server concurrently, run command from base directory
+npm run dev
+```
 
-1.0.0
-
-### License
-
-This project is licensed under the MIT License
+### The structure from this code was sourced from the following locations
+https://github.com/bradtraversy/react_express_starter
+https://www.youtube.com/watch?v=v0t42xBIYIs
+https://www.youtube.com/watch?v=HPIjjFGYSJ4

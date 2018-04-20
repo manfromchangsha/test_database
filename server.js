@@ -1,8 +1,3 @@
-/*
-CODE SKELETON SOURCED FROM https://github.com/bradtraversy/react_express_starter, https://www.youtube.com/watch?v=v0t42xBIYIs
-https://www.youtube.com/watch?v=HPIjjFGYSJ4
-*/
-
 const express = require('express');
 const app = express();
 var mysql = require('mysql');
