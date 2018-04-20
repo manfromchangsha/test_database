@@ -14,6 +14,8 @@ npm run client-Install
 
 ```
 
+IMPORTANT NOTE: You MUST modify the config.js file to use your MySQL password
+
 ## Running the application
 
 ``` bash
