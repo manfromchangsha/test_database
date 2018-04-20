@@ -28,6 +28,6 @@ npm run dev
 ```
 
 ### The structure from this code was sourced from the following locations
-https://github.com/bradtraversy/react_express_starter
-https://www.youtube.com/watch?v=v0t42xBIYIs
-https://www.youtube.com/watch?v=HPIjjFGYSJ4
+https://github.com/bradtraversy/react_express_starter  
+https://www.youtube.com/watch?v=v0t42xBIYIs  
+https://www.youtube.com/watch?v=HPIjjFGYSJ4  
